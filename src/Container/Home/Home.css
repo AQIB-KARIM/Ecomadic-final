@@ -87,6 +87,10 @@
         flex-wrap: wrap;
         justify-content: center;
     }
+
+    .popular_img img{
+        margin-bottom: 10px;
+    }
 }
 
 .popular_img img{
@@ -148,6 +152,10 @@
         font-size: 22px;
         text-align: center;
         margin: 5px;
+    }
+
+    .text_section p{
+        text-align: center;
     }
 
 }
