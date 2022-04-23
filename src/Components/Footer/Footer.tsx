@@ -17,10 +17,10 @@ import { FaSearch } from 'react-icons/fa'
 
 
 const SocialButton = ({
-                          children,
-                          label,
-                          href,
-                      }: {
+    children,
+    label,
+    href,
+}: {
     children: ReactNode;
     label: string;
     href: string;
@@ -51,8 +51,8 @@ const SocialButton = ({
 const Footer = () => {
     return (
         <Box className='footer_container'
-             bg={"#05333F"}
-             color={"white"}>
+            bg={"#05333F"}
+            color={"white"}>
             <Container as={Stack} maxW={'6xl'} py={10}>
                 <SimpleGrid
                     templateColumns={{ sm: '1fr 1fr', md: '2fr 1fr 1fr 2fr' }}
@@ -87,17 +87,24 @@ const Footer = () => {
 
                         <Stack className='input_container' direction={'row'}>
 
-                            <Input
-                                bg={useColorModeValue('blackAlpha.100', 'whiteAlpha.100')}
-                                border={"1px solid grey"}
-                                borderRadius={"20px"}
-                                _focus={{
-                                    bg: 'whiteAlpha.300',
-                                }}
-                            />
+
+                            <div style={{ border: '1px solid grey', borderRadius: '20px', display: 'flex', alignItems: 'center' }}>
+                            <FaSearch style={{marginLeft: '10px'}}/>
+                                <Input
+                                    bg={useColorModeValue('blackAlpha.100', 'whiteAlpha.100')}
+                                    border={"none"}
+                                    _focus={{
+                                        bg: 'whiteAlpha.300',
+                                    }}
+                                />
+                            </div>
+                            
 
 
-                            <span><FaSearch /></span>
+
+
+
+                            <span></span>
 
                         </Stack>
                         <Stack direction={'row'} color={"white"} marginTop={10} spacing={6}>
