@@ -37,9 +37,9 @@ const Home = () => {
                             <BsFillCalendarDayFill />
                             <DatePicker selected={startDate} onChange={(date) => setStartDate(date)} />
                         </div>
-                        <div className={'location_input'}>
+                        <div className={'location_input1'}>
                             <BsPeopleFill />
-                            <input style={{width: '100px'}} type='text'  placeholder={'Add guests'} />
+                            <input style={{width: '80px'}} type='text'  placeholder={'Add guests'} />
                         </div>
                         <div className={'input_btn'}>
                             <button type={'submit'}> <AiOutlineArrowRight /></button>
