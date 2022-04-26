@@ -16,6 +16,8 @@ import "./Footer.css";
 import { FaSearch } from 'react-icons/fa'
 
 
+
+
 const SocialButton = ({
     children,
     label,
@@ -27,6 +29,7 @@ const SocialButton = ({
 }) => {
     return (
         <chakra.button
+
             bg={useColorModeValue('blackAlpha.100', 'whiteAlpha.100')}
             rounded={'full'}
             w={8}
@@ -40,7 +43,10 @@ const SocialButton = ({
             transition={'background 0.3s ease'}
             _hover={{
                 bg: useColorModeValue('blackAlpha.200', 'whiteAlpha.200'),
+                color: useColorModeValue('greyAlpha.600', 'whiteAlpha.400')
+
             }}>
+
             <VisuallyHidden>{label}</VisuallyHidden>
             {children}
         </chakra.button>
@@ -49,6 +55,7 @@ const SocialButton = ({
 
 
 const Footer = () => {
+  
     return (
         <Box className='footer_container'
             bg={"#05333F"}
@@ -66,7 +73,6 @@ const Footer = () => {
                         <Text fontSize={'sm'}>
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error necessitatibus ducimus atque alias hic quis ab corporis fuga enim similique, veniam pariatur, possimus illum repudiandae accusamus deserunt odit, vitae numquam.
                         </Text>
-
                     </Stack>
                     <Stack align={'flex-start'}>
                         <Link href={'#'}>Link Secondary</Link>
@@ -76,7 +82,6 @@ const Footer = () => {
                         <Link href={'#'}>Link Secondary</Link>
                     </Stack>
                     <Stack align={'flex-start'}>
-
                         <Link href={'#'}>Link Secondary</Link>
                         <Link href={'#'}>Link Secondary</Link>
                         <Link href={'#'}>Link Secondary</Link>
@@ -84,31 +89,20 @@ const Footer = () => {
                         <Link href={'#'}>Link Secondary</Link>
                     </Stack>
                     <Stack align={'flex-start'}>
-
                         <Stack className='input_container' direction={'row'}>
-
-
                             <div style={{ border: '1px solid grey', borderRadius: '20px', display: 'flex', alignItems: 'center' }}>
-                            <FaSearch style={{marginLeft: '10px'}}/>
+                                <FaSearch style={{ marginLeft: '10px' }} />
                                 <Input
                                     bg={useColorModeValue('blackAlpha.100', 'whiteAlpha.100')}
                                     border={"none"}
                                     _focus={{
-                                        bg: 'whiteAlpha.300',
+                                        bg: 'whiteAlpha.300'
                                     }}
                                 />
                             </div>
-                            
-
-
-
-
-
-                            <span></span>
-
                         </Stack>
                         <Stack direction={'row'} color={"white"} marginTop={10} spacing={6}>
-                            <SocialButton label={'Twitter'} href={'#'} >
+                            <SocialButton label={'Twitter'} href={'#'}>
                                 <FaTwitter />
                             </SocialButton>
                             <SocialButton label={'Linkedin'} href={'#'}>

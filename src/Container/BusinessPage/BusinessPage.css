@@ -490,3 +490,12 @@ input.quantity__input {
     height: 300px !important;
     width: 100% !important;
 }
+
+@media only screen and (max-width: 768px) {
+    .check_in{
+       padding: 10px !important;
+    }
+  }
+
+
+

@@ -101,3 +101,12 @@
     margin-top: 15px;
     margin-bottom: 8px;
 }
+
+
+@media only screen and (max-width: 768px) {
+    .css-ujma4c{
+        display: block !important;
+    }
+  }
+
+

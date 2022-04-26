@@ -123,3 +123,13 @@ margin-top: 10px;
     display: flex;
     margin: 10px 0;
 }
+
+@media only screen and (max-width: 768px) {
+
+    .css-1f98y59 {
+        display: block !important;
+    }
+    .room_details{
+        width: 100% !important;
+    }
+  }
